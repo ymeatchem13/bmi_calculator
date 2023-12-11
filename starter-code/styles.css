@@ -1,0 +1,206 @@
+html, body {
+    height: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+    font-family: 'Inter';
+
+    .bmi-calculator {
+        display: grid;
+        grid: auto-flow / repeat(12, 1fr);
+        height: 80vh;
+
+        .bmi-logo {
+            grid-column-start: 2;
+            grid-column-end: span 1;
+            align-self: center;
+        }
+
+        .bmi-description {
+            grid-column-start: 2;
+            grid-column-end: span 3;
+
+            .header {
+                font-size: 54px;
+                color: #253347;
+            }
+            
+            .bmi-description-content {
+                color: #5E6E85;
+            }
+            
+        }
+
+        .bmi-form {
+            grid-column-start: 8;
+            grid-column-end: span 4;
+            border-radius: 15px;
+            height: 85%;
+            box-shadow: 1px 1px 5px 5px #ccc;
+
+            .bmi-form-content {
+
+                .content {
+                    margin: 2em;
+
+                    .content-header {
+                        color: #253347;
+                    }
+
+                    .checkbox-container {
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 1.5em;
+
+                        .metric-container {
+                            width: 50%;
+
+                            .metric-label {
+                                color: #253347;
+                            }
+                        }
+
+                        .imperial-container {
+                            width: 50%;
+
+                            .imperial-label {
+                                color: #253347;
+                            }
+                        }
+                    }
+
+                    .height-weight-container {
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 1.5em;
+                        
+                        .height-container {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+
+                            label {
+                                color: #5E6E85;
+                            }
+
+                            .height-input {
+                                display: flex;
+                                flex-direction: row;
+
+                                .height {
+                                    width: 90%;
+                                    border: 1px solid #ccc;
+                                    border-radius: 10px;
+                                    box-sizing: border-box;
+                                    padding: 12px 20px;
+                                    margin-top: 0.5em;
+                                    font-size: 20px;
+                                }
+
+                                input:focus {
+                                    border: 1px solid #345FF6;
+                                }
+
+                                .units-value-container {
+                                    .units-value {
+                                        position: relative;
+                                        left: -2.5em;
+                                        top: 1.25em;
+                                        color: #345FF6;
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+
+                        .weight-container {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+
+                            label {
+                                color: #5E6E85;
+                            }
+
+                            .weight-input {
+                                display: flex;
+                                flex-direction: row;
+
+                                .weight {
+                                    width: 90%;
+                                    border: 1px solid #ccc;
+                                    border-radius: 10px;
+                                    box-sizing: border-box;
+                                    padding: 12px 20px;
+                                    margin-top: 0.5em;
+                                    font-size: 20px;
+                                }
+
+                                input:focus {
+                                    border: 1px solid #345FF6;
+                                }
+
+                                .units-value-container {
+                                    .units-value {
+                                        position: relative;
+                                        left: -2.5em;
+                                        top: 1.25em;
+                                        color: #345FF6;
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .bmi-info-container {
+                        border: solid;
+                        border-radius: 15px 100px 100px 15px;
+                        border-color: #345FF6;
+                        background-image: linear-gradient(to right, rgb(52, 95, 246), rgb(73, 111, 246));
+                        /*background-color: #345FF6;*/
+
+                        .info-container {
+                            margin: 1.5em;
+                            display: flex;
+                            flex-direction: row;
+
+                            .bmi-info {
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                color: #FFFFFF;
+
+                                .bmi-number {
+                                    color: #FFFFFF;
+                                    font-size: 56px;
+                                    font-weight: 700;
+                                    margin: 0;
+                                }
+                            }
+    
+                            .bmi-message {
+                                width: 50%;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
