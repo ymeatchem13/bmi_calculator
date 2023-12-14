@@ -29,23 +29,24 @@
     </div>
     
     <!-- Right Section -->
-    <div class="bmi-form"> <!-- Form -->
+    <div id="form" class="bmi-form"> <!-- Form -->
       <div class="bmi-form-content">
         <div class="content">
           <h1 class="content-header">Enter your details below</h1>
 
           <div class="checkbox-container">
             <div class="metric-container">
-              <input type="checkbox" id="metricChkbox" name="metricChkbox" value="metric">
+              <input type="checkbox" id="metricChkbox" name="metricChkbox" value="metric" onchange="onCheckboxChanged()">
               <label class="metric-label" for="metricChkbox">Metric</label>
             </div>
             <div class="imperial-container">
-              <input type="checkbox" id="imperialChkbox" name="imperialChkbox" value="imperial">
+              <input type="checkbox" id="imperialChkbox" name="imperialChkbox" value="imperial" onchange="onCheckboxChanged()">
               <label class="imperial-label" for="imperialChkbox">Imperial</label>
             </div>
           </div>
           
-          <div class="height-weight-container">
+          <!-- Metric Display -->
+          <div id="metric" class="height-weight-container">
             <div class="height-container">
               <label for="height">Height</label>
               <div class="height-input">
@@ -66,6 +67,48 @@
             </div>
           </div>
       
+          <!-- Imperial Display -->
+          <div id="imperial" class="imperial-display-container">
+            <div class="imperial-height-container">
+              <div class="height-container">
+                <label for="height">Height</label>
+                <div class="feet-input">
+                  <input class="feet" type="number" id="feet" name="feet">
+                  <div class="units-value-container">
+                    <span class="units-value">ft</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inches-container">
+                <div class="inches-input">
+                  <input class="inches" type="number" id="inches" name="inches">
+                  <div class="units-value-container">
+                    <span class="units-value">in</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="imperial-weight-container">
+              <div class="weight-container">
+                <label for="weight">Weight</label>
+                <div class="stone-input">
+                  <input class="stone" type="number" id="stone" name="stone">
+                  <div class="units-value-container">
+                    <span class="units-value">st</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pounds-container">
+                <div class="pounds-input">
+                  <input class="pounds" type="number" id="pounds" name="pounds">
+                  <div class="units-value-container">
+                    <span class="units-value">lbs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="bmi-info-container">
             <div class="info-container">
               <div class="bmi-info">

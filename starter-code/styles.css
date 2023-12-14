@@ -70,6 +70,28 @@ input[type=number] {
                             .metric-label {
                                 color: #253347;
                             }
+
+                            input {
+                                width: 25px;
+                                height: 25px;
+                                background-color: white;
+                                border-radius: 50%;
+                                vertical-align: middle;
+                                border: 2px solid #ddd;
+                                appearance: none;
+                                -webkit-appearance: none;
+                                outline: none;
+                                cursor: pointer;
+                            }
+
+                            input:hover {
+                                border: 2px solid #345FF6;
+                            }
+
+                            input:checked {
+                                border: 6px solid #D8E2E7;
+                                background-color: #345FF6;
+                            }
                         }
 
                         .imperial-container {
@@ -77,6 +99,28 @@ input[type=number] {
 
                             .imperial-label {
                                 color: #253347;
+                            }
+
+                            input {
+                                width: 25px;
+                                height: 25px;
+                                background-color: white;
+                                border-radius: 50%;
+                                vertical-align: middle;
+                                border: 2px solid #ddd;
+                                appearance: none;
+                                -webkit-appearance: none;
+                                outline: none;
+                                cursor: pointer;
+                            }
+
+                            input:hover {
+                                border: 2px solid #345FF6;
+                            }
+
+                            input:checked {
+                                border: 6px solid #D8E2E7;
+                                background-color: #345FF6;
                             }
                         }
                     }
@@ -167,11 +211,159 @@ input[type=number] {
                         }
                     }
 
+                    .imperial-display-container {
+                        display: flex;
+                        flex-direction: column;
+
+                        .imperial-height-container {
+                            display: flex;
+                            flex-direction: row;
+
+                            .height-container {
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+
+                                label {
+                                    color: #5E6E85;
+                                }
+
+                                .feet-input {
+                                    display: flex;
+                                    flex-direction: row;
+
+                                    .feet {
+                                        width: 90%;
+                                        border: 1px solid #ccc;
+                                        border-radius: 10px;
+                                        box-sizing: border-box;
+                                        padding: 12px 20px;
+                                        margin-top: 0.5em;
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+
+                            .inches-container {
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                margin-top: 1.15em;
+
+                                label {
+                                    color: #5E6E85;
+                                }
+
+                                .inches-input {
+                                    display: flex;
+                                    flex-direction: row;
+
+                                    .inches {
+                                        width: 90%;
+                                        border: 1px solid #ccc;
+                                        border-radius: 10px;
+                                        box-sizing: border-box;
+                                        padding: 12px 20px;
+                                        margin-top: 0.5em;
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+
+                            input:focus {
+                                border: 1px solid #345FF6;
+                            }
+
+                            .units-value-container {
+                                .units-value {
+                                    position: relative;
+                                    left: -2.5em;
+                                    top: 1.25em;
+                                    color: #345FF6;
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+
+                        .imperial-weight-container {
+                            display: flex;
+                            flex-direction: row;
+
+                            .weight-container {
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+
+                                label {
+                                    color: #5E6E85;
+                                }
+                                
+                                .stone-input {
+                                    display: flex;
+                                    flex-direction: row;
+
+                                    .stone {
+                                        width: 90%;
+                                        border: 1px solid #ccc;
+                                        border-radius: 10px;
+                                        box-sizing: border-box;
+                                        padding: 12px 20px;
+                                        margin-top: 0.5em;
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+
+                            .pounds-container {
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                margin-top: 1.15em;
+
+                                label {
+                                    color: #5E6E85;
+                                }
+
+                                .pounds-input {
+                                    display: flex;
+                                    flex-direction: row;
+
+                                    .pounds {
+                                        width: 90%;
+                                        border: 1px solid #ccc;
+                                        border-radius: 10px;
+                                        box-sizing: border-box;
+                                        padding: 12px 20px;
+                                        margin-top: 0.5em;
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+
+                            input:focus {
+                                border: 1px solid #345FF6;
+                            }
+
+                            .units-value-container {
+                                .units-value {
+                                    position: relative;
+                                    left: -2.5em;
+                                    top: 1.25em;
+                                    color: #345FF6;
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+
                     .bmi-info-container {
                         border: solid;
                         border-radius: 15px 100px 100px 15px;
                         border-color: #345FF6;
                         background-image: linear-gradient(to right, rgb(52, 95, 246), rgb(73, 111, 246));
+                        margin-top: 1.5em;
                         /*background-color: #345FF6;*/
 
                         .info-container {
